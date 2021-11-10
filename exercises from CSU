@@ -122,6 +122,19 @@ max(word,key = len)
 2 списка: слова на гласную и согласную буквы
 
 количество уникальных слов
+s = ["cat", "dog", "cat", "boy", "girl"]
+
+def get_unique_s(s):
+    unique = []
+
+    for word in s:
+        if word in unique:
+            continue
+        else:
+            unique.append(word)
+    return unique
+
+print(len(get_unique_s(s)))
 
 Дано 2 упорядоченных списка. Объединить их 
 в один упорядоченный список. Указание: встроенная функция sort ухудшает алгоритмическую сложность и ее использовать в данной задаче нельзя.
