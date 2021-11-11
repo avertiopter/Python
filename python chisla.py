@@ -51,10 +51,13 @@ print("Это простое число")
 
 #вывести все простые числа от 2 до n
 
-from math import sqrt
 n = int(input())
-for x in range(2, n + 1):
-    if all(x % i != 0 for i in range(2, int(sqrt(x)) + 1)):
-        print(x, end=" ")
-
-
+def prost_chisl(chis):
+    for i in range (2, chis):
+        if chis // i == 1:
+            print (chis)
+            break
+        elif chis % i == 0:
+            break
+for i in range (2, n):
+    prost_chisl(i)
